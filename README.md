@@ -1,1 +1,1 @@
-# portfolio
+# simple portfolio page for software developers
