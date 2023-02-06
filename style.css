@@ -13,7 +13,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
+    --clr-light: #e5e5e5;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
     
@@ -86,6 +86,35 @@ strong {font-weight: var(--fw-bold);}
 .btn:hover {
     transform: scale(1.1);
 }
+
+.btn2{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 400px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    border-color: #111;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #111;
+    height: 48px;
+    position: fixed;
+    z-index: 31;
+}
+.btn2:hover {
+    transform: scale(1.1);
+}
+
+
 /*#endregion */
 
 /*#region typography*/
@@ -157,7 +186,7 @@ header {
     color: var(--clr-light);
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
     right: 0;
     z-index: 31;
 
@@ -190,9 +219,10 @@ header {
 .nav-toggle {
     padding: .5em;
     background: transparent;
-    border: 0;
+    border: 1;
+    border-color: #16e0bd;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -482,6 +512,10 @@ header {
 
 /*#region portfolioItem */
 
+.content{
+    background-color:#303030;
+}
+
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
@@ -493,6 +527,8 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: #16e0bd;
+    text-align: justify;
 }
 
 

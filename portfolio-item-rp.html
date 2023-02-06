@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Name</title>
+    <title>random-projects — ckyagmur.dev  </title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
 <body>
     <header>
         <div class ="logo">
-            <img src="./images/dev-yagmur.png" alt="">
+            <button class="btn2" onclick="history.back()">Previous Page</button>
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -33,14 +34,14 @@
 
     <section class="intro">
         <h1 class="section__title section__title--intro">
-            Title <strong> of your sex tape </strong>
+            <strong>Random Projects</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro"> Amy Santiago </p>
-        <img src="/assets/portfolio.png" alt=" " class="intro__img">
+        <img src="./assets/random-projects.png" alt=" " class="intro__img">
 
     </section>
 
-    <section class="services">
+    <section class="content">
     <div class="portfolio-item-individual">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -93,6 +94,19 @@
             </li>   
         </ul>
     </footer>
-    <script src="/script.js"></script>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        navToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.classList.remove('nav-open');
+            }) 
+        })
+    </script>
 </body>
 </html>
